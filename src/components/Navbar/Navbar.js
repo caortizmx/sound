@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link, NavLink } from 'react-router-dom'
 import logo from './logoOK.png'
 
 const Navbar = () => {
@@ -16,15 +16,15 @@ const Navbar = () => {
         </div>
       </div>
       <ul className='nav-links'>
-        <Link to={"/us"}>
+        <NavLink exact className={({ isActive }) => (isActive ? "link-active" : "link")} to={"/us"}>
           <div className='circle'><li>Us</li></div>
-        </Link>
-        <Link to={"/projects"}>
+        </NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to={"/projects"}>
           <div className='circle'><li>Projects</li></div>
-        </Link>
-        <Link to={"/contact"}>
+        </NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to={"/contact"}>
           <div className='circle'><li>Contact</li></div>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   )
