@@ -1,0 +1,17 @@
+/* Base */
+@use './scss/base/base';
+@use './scss/base/typography';
+
+/* Component */
+@use './scss/components/loader';
+
+/* Layout */
+@use './scss/layout/navbar';
+@use './scss/layout/sidebar';
+
+/* Pages */
+
+@use './scss/pages/home';
+@use './scss/pages/us';
+@use './scss/pages/contact';
+@use './scss/pages/projects';
