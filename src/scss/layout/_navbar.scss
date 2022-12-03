@@ -41,26 +41,21 @@ nav {
     color: #FBB03B;
     transition: 0.2s ease-in;
   }
-  
-  .circle:hover a {
-    background-color:black;
-    border-radius: 100%;
-    color: white;
-  }
 
-  #logo-div {
-    padding-right: 40px;
-    img {
-      width: 120px;
-      height: 120px;
-    }
-  }
-  
   .link-active {
     color: #FBB03B;
   }
 
-  @media screen and (max-height: 500px) {
+  #logo-div {
+    padding-right: 40px;
+  }
+
+  #logo-div img {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media only screen and (max-height: 500px) {
     #logo-div img {
       width: 60px;
       height: 60px;
