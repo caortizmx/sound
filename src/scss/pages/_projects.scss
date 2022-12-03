@@ -12,10 +12,175 @@
   padding-top: 20vh;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .projects iframe {
-  width: 100%;
-  height: 100%;
+  width: 650px;
+  height: 350px;
+  position: relative;
+  z-index: 100;
 }
+
+.background {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  height: 80vh;
+  width: 100%;
+}
+
+.project-background {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+}
+
+.projects-top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 40px;
+  transform: scaleX(-1)
+}
+
+.projects-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  gap: 40px;
   
+}
+
+.project-lines {
+  width: 30px;
+}
+
+.project-lines:nth-child(1) {
+  height: 100%;
+  background-color: #fcec21;
+}
+
+.project-lines:nth-child(2) {
+  height: 80%;
+  background-color: #faaf3b;
+}
+
+.project-lines:nth-child(3) {
+  height: 70%;
+  background-color: #f5921b;
+}
+
+.project-lines:nth-child(4) {
+  height: 50%;
+  background-color: #ef5923;
+}
+
+.project-lines:nth-child(5) {
+  height: 40%;
+  background-color: #ec1b22;
+}
+
+.project-lines:nth-child(6) {
+  height: 25%;
+  background-color: #c0262c;
+}
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#current {
+  position: absolute;
+  width:20px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align:center;
+  line-height:20px;
+  top: 5%;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+#projects-tl {
+  position: absolute;
+  width:20px;
+  text-align:center;
+  line-height:20px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  bottom: 2%;
+  right: 23%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .project-background {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  #projects-tl {
+    right: 10%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .project-background {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #projects-tl {
+    right: 9.5%;
+  }
+
+  .video-container iframe {
+    width: 60%;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px){
+  #current {
+    top: 16%;
+  }
+
+  .background-divide{
+    height: 50%;
+  }
+
+  .video-container iframe {
+    height: 40%;
+  }
+}
+
+
+
+@media screen and (max-height: 916px) {
+  #current {
+    font-size: 15px;
+  }
+
+  #projects-tl {
+    font-size: 15px;
+    bottom: 15%;
+  }
+}

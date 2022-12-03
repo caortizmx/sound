@@ -14,18 +14,57 @@
 
 .email-container {
   position: relative;
+  height: 80vh;
 }
 
-#email {
-  width: 100%;
-  bottom: 5%;
+.link-container {
+position: absolute;
+color: white;
+z-index: 99999;
+height: 90px;
+bottom: 0px;
+width: 100%;
+text-align: center;
+padding: 20px;
+cursor: pointer;
+a {
   color: white;
-  position: absolute;
-  font-size: 2rem;
   text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+}
 }
 
 #contact-img {
-  height: 80vh;
-  width: 92vw;
+  width: 1450px !important;
+  position: fixed !important;
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 1400px) {
+  #contact-img {
+    width: 1450px !important;
+    position: fixed !important;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact-img {
+    width: 700px;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .link-container {
+    a {
+      font-size: 30px;
+    }
+    }
+}
+
+#email {
+  cursor: pointer;
 }
