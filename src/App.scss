@@ -201,9 +201,52 @@
   .bryden-section .home-names {
     position: absolute;
     right: 20%;
+    padding-top: 40px;
   }
 
   .bryden-section img {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 630px) {
+  .abraham-info {
+    padding-top: 60%;
+  }
+}
+
+  @media only screen and (min-width: 750px) {
+    .abraham-info {
+      padding-top: 35%;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .abraham-info {
+      padding-top: 20%;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .abraham-info {
+      padding-top: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .abraham-info {
+      padding-top: 7%;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .abraham-info {
+      padding-top: 60%;
+    }
+  }
+
+  @media screen and (max-height: 520px) {
+    .background {
+      display: none;
+    }
+  }

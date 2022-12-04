@@ -7,34 +7,9 @@ const Loader = () => {
     initial={{opacity: 1}}
     exit={{opacity: 0, duration: 0.5, ease: "easeOut" }}
     transition={{ duration: 1, ease: "easeOut"}}
-      className="loader"
+    className="loader"
     >
-
-      <div className='music-loader'>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      <div className='loader-line'></div>
-      </div>
+      <div id='loader-bg'></div>
     </motion.div>
   )
 }

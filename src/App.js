@@ -12,27 +12,16 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Us from './pages/Us';
 import Projects from './pages/Projects';
-import Loader from './components/Loader';
 
 function App() {
 
   const location = useLocation();
-  const [loaded, setLoaded] = useState(false);
-  
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 3000);
-  }, [])
 
     return (
+      
       <main className="App">
-
         <Navbar/>
         <Sidebar/>
-        <AnimatePresence>
-        {loaded ? null : <Loader />}
-        </AnimatePresence>
         <AnimatePresence mode="wait" initial={false} >
           <Routes location={location} key={location.pathname}>
               <Route path='/' element={<Home/>}></Route>

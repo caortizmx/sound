@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className='nav-bar'>
       <div id='logo-div'>
         <Link to={"/"}>
-          <img width="120px" height="120px" src={logo}></img>
+          <img src={logo}></img>
         </Link>
       </div>
       <div className='bar'>

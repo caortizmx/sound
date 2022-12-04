@@ -1,10 +1,12 @@
 import React from 'react';
 import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
+import Transition from '../components/Sidebar/Transition';
 
 function Home() {
   return (
     <div className='home'>
+        <Transition/>
         <div className='bryden-section'>
             <img src={bryden} width="100%" height="auto"></img>
             <div className='home-names'>
