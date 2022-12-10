@@ -95,13 +95,12 @@ li::marker {
     height: auto;
     display: flex;
     width: 100%;
-    padding-top: 30px;
     &:nth-child(1) {
       margin-bottom: 80px;
     }
     .imgBx {
       position: sticky;
-      top: 35%;
+      top: 25%;
       min-width: 100%;
       overflow: hidden;
       height: 80vh;
@@ -111,7 +110,7 @@ li::marker {
         overflow: visible;
         display: block;
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 600px;
@@ -185,7 +184,7 @@ li::marker {
 @media only screen and (max-width: 600px) {
   .us {
     padding-left: 0;
-    padding-top: 30vh;
+    padding-top: 20vh;
 
     .bryden-info {
       display: grid;

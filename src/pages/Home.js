@@ -3,11 +3,10 @@ import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
 import Transition from '../components/Transition';
 import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import {AnimatePresence} from 'framer-motion';
 
 function Home() {
     const [loaded, setLoaded] = useState(false);
-    
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);
@@ -19,7 +18,6 @@ function Home() {
         <AnimatePresence>
         {loaded ? null : <Transition/>}
         </AnimatePresence>
-        <Transition/>
         <div className='bryden-section'>
             <img src={bryden} width="100%" height="auto"></img>
             <div className='home-names'>
