@@ -1,5 +1,5 @@
 import React from 'react'
-import Transition from '../components/Sidebar/Transition';
+import Transition from '../components/Transition';
 
 function Projects() {
   return (

@@ -1,18 +1,18 @@
 import React from 'react';
 import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
-import Transition from '../components/Sidebar/Transition';
+import Transition from '../components/Transition';
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 function Home() {
     const [loaded, setLoaded] = useState(false);
-
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);
         }, 3000);
     }, [])
+    
   return (
     <div className='home'>
         <AnimatePresence>

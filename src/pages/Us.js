@@ -3,7 +3,7 @@ import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
 import { useEffect, useState } from "react";
 import {motion as m, AnimatePresence} from 'framer-motion';
-import Transition from '../components/Sidebar/Transition';
+import Transition from '../components/Transition';
 
 function Us() {
   const [loaded, setLoaded] = useState(false);
@@ -16,9 +16,9 @@ function Us() {
   return (
     
     <div className='us'>
-        <AnimatePresence>
-        {loaded ? null : <Transition/>}
-        </AnimatePresence>
+      <AnimatePresence>
+      {loaded ? null : <Transition/>}
+      </AnimatePresence>
       <m.div
         initial={{opacity: 0}}
         animate={{opacity: 1}}
@@ -57,6 +57,7 @@ function Us() {
           <img src={abraham}></img>
         </div>
       </m.div>
+
       <div className='mobile-about'>
         <section>
           <div className="imgBx">
@@ -72,7 +73,6 @@ function Us() {
         <section>
           <div className="imgBx">
               <img id='abraham' src={abraham} alt=""></img>
-
           </div>
           <div className="content">
             <h5 id='orange-name'>Abraham</h5>

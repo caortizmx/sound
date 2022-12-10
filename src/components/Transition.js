@@ -3,8 +3,9 @@ import {motion as m, useIsPresent} from 'framer-motion';
 import logo from './logoOK.png';
 
 function Transition() {
-    const isPresent = useIsPresent();
+  const isPresent = useIsPresent();
 
+  
   return (
     <m.div 
     initial={{ opacity: 1, duration: 2}}

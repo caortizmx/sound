@@ -6,6 +6,7 @@
 p {
   color: white;
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 a {
@@ -13,11 +14,46 @@ a {
   color: rgb(0, 0, 0);
 }
 
-h5 {
-  font-weight: 400;
-}
-
-
 h4 {
   font-weight: 400;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+ul {
+  text-align: end;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.us-names {
+  font-family: 'champions';
+  position: absolute;
+  font-size: 50px;
+  right: 25px;
+  text-transform: uppercase;
+}
+
+#yellow-name {
+  color: #FBB03B;
+}
+
+#white-surname {
+  color: white;
+}
+
+#orange-name {
+  color: #F15A24;
+}
+
+#yellow-surname {
+  color: #FBB03B;
+  padding-bottom: 20px;
 }

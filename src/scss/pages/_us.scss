@@ -4,265 +4,148 @@
   min-height: 80vh;
   max-height: fit-content;
   width: 100%;
-  background-color: black;
   padding-left: 8%;
   padding-top: 25vh;
-  }
-  
   .bryden-info {
-    background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 300px;
-    
-
+    height: fit-content;
+    padding-bottom: 30px;
     .img-bryden {
       height: 300px;
       width: 100%;
       overflow: hidden;
       position: relative;
-      background-image: none;
-
       img {
         width: 100%;
         overflow: hidden;
       }
     }
-
+  
     .bryden-text {
-      background-color: transparent;
       padding: 15px;
       line-height: 25px;
-
+      height: fit-content;
       #band-leader {
         color: #F15A24;
       }
-
       #trumpet {
         color: #FBB03B;
       }
     }
   }
-  
-  .abraham-text {
-    background-color: #000000;
-    padding: 15px;
-    margin: 0px 25px 0px 25px;
-    line-height: 40px;
-    border-top: 4px solid;
-    border-image: linear-gradient(to right, orange, red) 2;
-
-    ul {
-      text-align: end;
-      color: white;
-      font-family: sans-serif;
-    }
-  }
-
+}
   
 .abraham-info {
   display: grid;
   grid-template-columns: 2fr 1fr;
   min-height: 300px;
   max-height: fit-content;
+  .abraham-text {
+    padding: 15px;
+    margin: 0px 25px 0px 25px;
+    line-height: 40px;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, orange, red) 2;
+  }
+  .img-abraham {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    .us-abraham {
+      padding-top: 30px;
+      font-family: 'champions';
+      font-size: 40px;
+      z-index: 90;
+      position: absolute;
+      text-transform: uppercase;
+    }
+    img {
+      width: 90%;
+      overflow: hidden;
+      position: absolute;
+      bottom: -20%;
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.mobile-about {
+  display: none;
+}
+
+#root {
   background-color: #000000;
 }
 
-.img-abraham {
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
+li::marker {
+  text-align: end !important;
 }
 
-.img-abraham img {
-  width: 90%;
-  overflow: hidden;
-  position: absolute;
-  bottom: -20%;
-  transform: scaleX(-1);
-}
-  
-  .us-names {
-    font-family: 'champions';
-    position: absolute;
+// Mobile version
+
+.mobile-about {
+  h5 {
+    font-family: 'champions', sans-serif;
     font-size: 50px;
-    right: 25px;
-    text-transform: uppercase;
   }
-  
-  #yellow-name {
-    color: #FBB03B;
-  }
-  
-  #white-surname {
-    color: white;
-  }
-
-  .mobile-about {
-    display: none;
-  }
-  
-  .us-abraham {
+  section {
+    position: relative;
+    height: auto;
+    display: flex;
+    width: 100%;
     padding-top: 30px;
-    font-family: 'champions';
-    font-size: 40px;
-    z-index: 90;
-    position: absolute;
-    text-transform: uppercase;
-    background-color: #000000;
-  }
-  
-  #orange-name {
-    color: #F15A24;
-  }
-  
-  #yellow-surname {
-    color: #FBB03B;
-  }
-  
-  #root {
-    background-color: #000000;
-  }
-
-  @media only screen and (max-width: 430px) {
-    .bryden-info {
-      display: none !important;
+    &:nth-child(1) {
+      margin-bottom: 80px;
     }
-
-    .abraham-info {
-      display: none !important;
-    }
-
-    .mobile-about {
-      display: block;
-    }
-  }
-  
-  @media only screen and (min-width: 750px) {
-    .abraham-info {
-      padding-top: 20%;
-    }
-  }
-  
-  @media only screen and (min-width: 900px) {
-    .abraham-info {
-      padding-top: 10%;
-    }
-  }
-  
-  @media only screen and (min-width: 980px) {
-    .abraham-info {
-      padding-top: 5%;
-    }
-  }
-  
-  @media only screen and (max-width: 750px) {
-    .abraham-info {
-      padding-top: 65%;
-    }
-    .us-names {
-      padding-top: 40px;
-    }
-  }
-
-  li::marker {
-    text-align: end !important;
-  }
-
-  .mobile-about {
-    section {
-      position: relative;
-      height: auto;
-      background-color: #000000;
-      display: flex;
-      width: 100%;
-    }
-
-    section .imgBx {
+    .imgBx {
       position: sticky;
       top: 0;
       min-width: 100%;
       overflow: hidden;
       height: 100vh;
+      img {
+        padding-top: 20%;
+        height: 80vh;
+        width: auto;
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+      }
+      #abraham {
+        height: 100vh !important;
+      }
     }
-
-    section .imgBx img {
-      padding-top: 20%;
-      height: 80vh;
-      width: auto;
-      overflow: hidden;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 600px;
+    .content {
+      position: relative;
+      transform: translateX(-100%);
+      font-size: 18px;
+      padding: 100px 30px 100px 30px;
+      width: 450px !important;
+      overflow-x: visible;
+      color: white;
+      #band-leader {
+        color: #F15A24;
+      }
+      #trumpet {
+        color: #FBB03B;
+      }
+      .space{
+        height: 100vh;
+      }
     }
-
-    section .imgBx #abraham {
-      height: 100vh !important;
-
-    }
-
-    section:nth-child(1) {
-      margin-bottom: 80px;
-    }
-
-    section .content {
-        position: relative;
-        transform: translateX(-100%);
-        font-size: 18px;
-        padding: 100px 30px 100px 30px;
-        width: 450px !important;
-        overflow-x: visible;
-        color: white;
-    }
-
-    section .content h5 {
-      font-family: 'champions', sans-serif;
-      font-size: 50px;
-  }
-
-    section .content .space{
-      height: 100vh;
-    }
-
-    #band-leader {
-      color: #F15A24;
-    }
-
-    #trumpet {
-      color: #FBB03B;
-    }
-
-  }
-
-  @media only screen and (min-width: 370px){
-  
-    section .content {
-        transform: translateX(-100%) !important;
-    }
-  }
-
-@media only screen and (min-width: 359px){
-
-  .mobile-about section .content {
-    padding: 0;
-  }
-
-  section .content {
-      transform: translateX(-130%) !important;
-  }
-  section .content p {
-      width: 300px;
   }
 }
 
+// Responsive
 
 @media only screen and (min-width: 320px){
-
   .mobile-about section .content {
     padding: 0;
   }
@@ -275,6 +158,63 @@
   }
 }
 
-.mobile-about section .content #yellow-surname {
-  padding-bottom: 40px;
+@media only screen and (min-width: 359px){
+  section .content {
+    transform: translateX(-115%) !important;
+  }
+}
+
+@media only screen and (min-width: 370px){
+  section .content {
+    transform: translateX(-115%) !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .bryden-info {
+    display: none !important;
+  }
+
+  .abraham-info {
+    display: none !important;
+  }
+
+  .mobile-about {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .us {
+    padding-left: 0;
+    padding-top: 30vh;
+
+    .bryden-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: fit-content;
+      padding-left: 0;
+      .img-bryden {
+        grid-row: 1;
+        order: 1;
+      }
+    }
+
+    .abraham-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: fit-content;
+      padding-top: 2% !important;
+      .abraham-text {
+        border: none;
+      }
+      .img-abraham {
+        grid-row: 1;
+        order: 1;
+        .us-abraham {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
 }

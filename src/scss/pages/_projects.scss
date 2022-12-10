@@ -42,8 +42,8 @@
   height: 50%;
   width: 100%;
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 40px;
   transform: scaleX(-1)
 }
@@ -53,10 +53,8 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
-  align-items: end;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 40px;
-  
 }
 
 .project-lines {
@@ -155,11 +153,12 @@
   .video-container iframe {
     width: 60%;
   }
-
-
 }
 
 @media only screen and (max-width: 600px){
+  .projects {
+    padding-left: 0;
+  }
   #current {
     top: 16%;
   }
@@ -172,8 +171,6 @@
     height: 40%;
   }
 }
-
-
 
 @media screen and (max-height: 916px) {
   #current {
