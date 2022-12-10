@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 
 function Home() {
     const [loaded, setLoaded] = useState(false);
+    
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);

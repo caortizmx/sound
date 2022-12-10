@@ -72,7 +72,7 @@ function Us() {
         </section>
         <section>
           <div className="imgBx">
-              <img id='abraham' src={abraham} alt=""></img>
+              <img id='abraham' src={abraham}></img>
           </div>
           <div className="content">
             <h5 id='orange-name'>Abraham</h5>

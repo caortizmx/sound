@@ -101,18 +101,17 @@ li::marker {
     }
     .imgBx {
       position: sticky;
-      top: 0;
+      top: 35%;
       min-width: 100%;
       overflow: hidden;
-      height: 100vh;
+      height: 80vh;
       img {
-        padding-top: 20%;
-        height: 80vh;
-        width: auto;
-        overflow: hidden;
+        height: auto;
+        width: 100%;
+        overflow: visible;
         display: block;
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 600px;
@@ -135,8 +134,8 @@ li::marker {
       #trumpet {
         color: #FBB03B;
       }
-      .space{
-        height: 100vh;
+      .space {
+        height: 300px;
       }
     }
   }
@@ -241,10 +240,6 @@ li::marker {
   
     section .content #yellow-surname {
       padding-bottom: 40px;
-    }
-
-    section .content .space{
-      height: 100vh;
     }
 
     #band-leader {
