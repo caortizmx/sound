@@ -2,11 +2,22 @@ import React from 'react';
 import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
 import Transition from '../components/Sidebar/Transition';
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 function Home() {
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoaded(true);
+        }, 3000);
+    }, [])
   return (
     <div className='home'>
-        <Transition/>
+        <AnimatePresence>
+        {loaded ? null : <Transition/>}
+        </AnimatePresence>
         <div className='bryden-section'>
             <img src={bryden} width="100%" height="auto"></img>
             <div className='home-names'>
