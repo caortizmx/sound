@@ -9,8 +9,8 @@ function Contact() {
       <div className='email-container'>
         <img id="contact-img" src={turntable}></img>
         <div className='link-container'>
-          <a onClick={() => window.location = 'mailto:agbuchanan@hotmail.com'} id="email" target="_blank">
-            agbuchanan@hotmail.com
+          <a onClick={() => window.location = 'mailto:contact@sounds-likeus.com'} id="email" target="_blank">
+          contact@sounds-likeus.com
           </a>
         </div>
       </div>
