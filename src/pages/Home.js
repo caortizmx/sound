@@ -18,6 +18,7 @@ function Home() {
         <AnimatePresence>
         {loaded ? null : <Transition/>}
         </AnimatePresence>
+        <Transition/>
         <div className='bryden-section'>
             <img src={bryden} width="100%" height="auto"></img>
             <div className='home-names'>

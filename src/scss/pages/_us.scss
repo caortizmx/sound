@@ -21,7 +21,6 @@
         overflow: hidden;
       }
     }
-  
     .bryden-text {
       padding: 15px;
       line-height: 25px;
@@ -216,5 +215,71 @@ li::marker {
         }
       }
     }
+    section .imgBx #abraham {
+      height: 100vh !important;
+
+    }
+
+    section:nth-child(1) {
+      margin-bottom: 80px;
+    }
+
+    section .content {
+        position: relative;
+        transform: translateX(-100%);
+        font-size: 18px;
+        padding: 100px 30px 100px 30px;
+        width: 450px !important;
+        overflow-x: visible;
+        color: white;
+    }
+
+    section .content h5 {
+      font-family: 'champions', sans-serif;
+      font-size: 50px;
+    }
+  
+    section .content #yellow-surname {
+      padding-bottom: 40px;
+    }
+
+    section .content .space{
+      height: 100vh;
+    }
+
+    #band-leader {
+      color: #F15A24;
+    }
+
+    #trumpet {
+      color: #FBB03B;
+    }
   }
 }
+
+  @media only screen and (min-width: 370px){
+    section .content {
+        transform: translateX(-100%) !important;
+    }
+  }
+
+  @media only screen and (min-width: 359px){
+    section .content {
+        transform: translateX(-130%) !important;
+    }
+  }
+
+
+  @media only screen and (min-width: 320px){
+    .mobile-about section .content {
+      padding: 0;
+    }
+
+    section .content {
+        transform: translateX(-105%) !important;
+    }
+
+    section .content p {
+        width: 300px;
+    }
+  }
