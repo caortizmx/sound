@@ -4,6 +4,9 @@ import abraham from '../abraham.jpeg';
 import { useEffect, useState } from "react";
 import {motion as m, AnimatePresence} from 'framer-motion';
 import Transition from '../components/Transition';
+import { useMediaQuery } from 'react-responsive';
+import brydenM from '../celok_briden.png';
+import abrahamM from '../celok_ab.png';
 
 function Us() {
   const [loaded, setLoaded] = useState(false);
@@ -12,7 +15,9 @@ function Us() {
     setTimeout(() => {
       setLoaded(true);
     }, 3000);
-  }, [])
+  }, []);
+
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
   return (
     
     <div className='us'>
@@ -84,12 +89,14 @@ function Us() {
         </div>
         <div className='about-bg'>
           <div className='bryden-section'>
-            <img src={bryden} width="100%" height="auto"></img>
+            <img src={isMobile ? brydenM : bryden} width="100%" height="auto"/>
           </div>
           <div className='abraham-section'>
-            <div className='img-container'>
-                <img width="100%" height="auto" src={abraham}></img>
-            </div>
+          { isMobile ? <img src={abrahamM}/> :
+                <div className='img-container'>
+                    <img width="100%" height="auto" src={abraham}/>
+                </div>
+            }
           </div>
         </div>
       </div>

@@ -1,133 +1,129 @@
 /* Home */
 
 .home {
+  padding-top: 20vh;
+  padding-left: 8%;
+  background-color: black;
+  min-height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home .p {
+  color: white;
+  font-size: 100px;
+}
+
+.bryden-section {
+  width: 50%;
+  height: 100%;
+  .home-names {
+    position: relative;
+    padding-right: 40px;
+    padding-top: 40px;
+    z-index: 77;
+  }
+}
+
+.abraham-section {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  .home-names {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 40px;
+    z-index: 77;
+  }
+  
+}
+
+.bryden-section .home-names {
+  text-align: end;
+}
+
+.name {
+  color: #F15A24;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.surname {
+  color: #FBB03B;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h1 {
+  font-family: 'champions';
+  font-weight: 400;
+}
+
+.img-container {
+  position: relative;
+  height: 100%;
+}
+
+.img-container img {
+  transform: scaleX(-1)
+  translateY(-35%);
+  z-index: 11;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
     padding-top: 20vh;
-    padding-left: 8%;
-    background-color: black;
-    min-height: fit-content;
+    padding-left: 0%;
+  }
+
+  .bryden-section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .home .p {
-    color: white;
-    font-size: 100px;
-  }
-  
-  .bryden-section {
-    width: 50%;
-    height: 100%;
     .home-names {
-      position: relative;
-      padding-right: 40px;
-      padding-top: 40px;
-      z-index: 77;
+      padding: 0;
+      position: absolute;
+      right: 10%;
+      padding-top: 65px;
+      .name, .surname { 
+        font-size: 1.9rem;
+        text-align: initial;
+        line-height: 1;
+      }
+    }
+    img {
+      z-index: 22;
+      padding: 0 20px;
+      width: 85%;
     }
   }
-  
+
   .abraham-section {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
     .home-names {
-      position: relative;
-      padding-left: 40px;
-      padding-top: 40px;
-      z-index: 77;
-    }
-    
-  }
-  
-  .bryden-section .home-names {
-    text-align: end;
-  }
-  
-  .name {
-    color: #F15A24;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  
-  .surname {
-    color: #FBB03B;
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
-  
-  h1 {
-    font-family: 'champions';
-    font-weight: 400;
-  }
-
-  .img-container {
-    position: relative;
-    height: 100%;
-  }
-  
-  .img-container img {
-    margin-top: -250px;
-    transform: scaleX(-1);
-    z-index: 11;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .home {
-      display: flex;
-      flex-direction: column;
-      padding-top: 25vh;
-      padding-left: 0%;
-    }
-  
-    .bryden-section {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      .home-names {
-        padding: 0;
-        position: absolute;
-        right: 10%;
-        padding-top: 65px;
-        .name, .surname { 
-          font-size: 1.9rem;
-          text-align: initial;
-          line-height: 1;
-        }
-      }
-      img {
-        z-index: 22;
-        padding: 0 20px;
-        width: 85%;
+      padding: 40px 0 0 0;
+      position: absolute;
+      left: 20%;
+      .name, .surname { 
+        font-size: 1.9rem;
+        text-align: end;
+        line-height: 1;
       }
     }
-  
-    .abraham-section {
-      width: 100%;
-      height: fit-content;
-      display: flex;
-      flex-direction: row;
-      padding-top: 50px;
-      .home-names {
-        padding: 40px 0 0 0;
-        position: absolute;
-        left: 20%;
-        .name, .surname { 
-          font-size: 1.9rem;
-          text-align: end;
-          line-height: 1;
-        }
-      }
-      .img-container {
-        height: auto;
-        img {
-        width: 65%;
-        margin-top: -10%;
-        position: absolute;
-        right: 13%;
-        }
-      }
+    img {
+      width: 65%;
+      margin-top: -10%;
+      position: absolute;
+      right: 13%;
     }
   }
+}

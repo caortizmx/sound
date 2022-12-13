@@ -92,11 +92,8 @@ li::marker {
     z-index: 990;
   }
   .about-bg {
-    position: fixed;
     top: 25vh;
-    height: fit-content;
-    z-index: 98;
-    overflow-y: scroll;
+    position: fixed;
   }
   h5 {
     font-family: 'champions', sans-serif;
