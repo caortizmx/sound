@@ -1,12 +1,12 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
-import {Link, NavLink } from 'react-router-dom'
-import logo from './logoOK.png'
-import logoMobile from './logo_cel.png'
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+import {Link, NavLink } from 'react-router-dom';
+import logo from './logoOK.png';
+import logoMobile from './logo_cel.png';
 
 const Navbar = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
-  const isDesktop = useMediaQuery({ query: '(min-width: 601px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 601px)' });
 
   return (
     <nav className='nav-bar'>
