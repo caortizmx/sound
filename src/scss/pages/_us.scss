@@ -73,6 +73,7 @@
 
 .mobile-about {
   display: none;
+  overflow-y: scroll;
 }
 
 #root {
@@ -86,45 +87,34 @@ li::marker {
 // Mobile version
 
 .mobile-about {
+  .mobile-text{
+    position: absolute;
+    z-index: 990;
+  }
+  .about-bg {
+    position: fixed;
+    top: 25vh;
+    height: fit-content;
+    z-index: 98;
+    overflow-y: scroll;
+  }
   h5 {
     font-family: 'champions', sans-serif;
     font-size: 50px;
   }
   section {
-    position: relative;
     height: auto;
     display: flex;
     width: 100%;
+    z-index: 999;
+    overflow-y: scroll;
     &:nth-child(1) {
       margin-bottom: 80px;
     }
-    .imgBx {
-      position: sticky;
-      top: 25%;
-      min-width: 100%;
-      overflow: hidden;
-      height: 80vh;
-      img {
-        height: auto;
-        width: 100%;
-        overflow: visible;
-        display: block;
-        position: absolute;
-        top: 17%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 600px;
-      }
-      #abraham {
-        height: 100vh !important;
-      }
-    }
     .content {
-      position: relative;
-      transform: translateX(-100%);
       font-size: 18px;
-      padding: 100px 30px 100px 30px;
-      width: 450px !important;
+      padding: 30px 30px 30px 30px;
+      width: 100%;
       overflow-x: visible;
       color: white;
       #band-leader {
@@ -134,38 +124,13 @@ li::marker {
         color: #FBB03B;
       }
       .space {
-        height: 300px;
+        height: 80vh;
       }
     }
   }
 }
 
 // Responsive
-
-@media only screen and (min-width: 320px){
-  .mobile-about section .content {
-    padding: 0;
-  }
-
-  section .content {
-      transform: translateX(-105%) !important;
-  }
-  section .content p {
-      width: 300px;
-  }
-}
-
-@media only screen and (min-width: 359px){
-  section .content {
-    transform: translateX(-115%) !important;
-  }
-}
-
-@media only screen and (min-width: 370px){
-  section .content {
-    transform: translateX(-115%) !important;
-  }
-}
 
 @media only screen and (max-width: 430px) {
   .bryden-info {
@@ -191,10 +156,6 @@ li::marker {
       grid-template-columns: 1fr;
       height: fit-content;
       padding-left: 0;
-      .img-bryden {
-        grid-row: 1;
-        order: 1;
-      }
     }
 
     .abraham-info {
@@ -212,23 +173,6 @@ li::marker {
           padding-left: 20px;
         }
       }
-    }
-    section .imgBx #abraham {
-      height: 100% !important;
-    }
-
-    section:nth-child(1) {
-      margin-bottom: 80px;
-    }
-
-    section .content {
-        position: relative;
-        transform: translateX(-100%);
-        font-size: 18px;
-        padding: 100px 30px 100px 30px;
-        width: 450px !important;
-        overflow-x: visible;
-        color: white;
     }
 
     section .content h5 {
@@ -249,30 +193,3 @@ li::marker {
     }
   }
 }
-
-  @media only screen and (min-width: 370px){
-    section .content {
-        transform: translateX(-100%) !important;
-    }
-  }
-
-  @media only screen and (min-width: 359px){
-    section .content {
-        transform: translateX(-130%) !important;
-    }
-  }
-
-
-  @media only screen and (min-width: 320px){
-    .mobile-about section .content {
-      padding: 0;
-    }
-
-    section .content {
-        transform: translateX(-105%) !important;
-    }
-
-    section .content p {
-        width: 300px;
-    }
-  }
