@@ -6,8 +6,9 @@ function Transition() {
   const isPresent = useIsPresent();
   return (
     <m.div 
-    initial={{ opacity: 1, duration: 3}}
-    animate={{ opacity: 0, transition: { duration: 3, ease: "linear" } }}
+    initial={{ opacity: 1}}
+    animate={{ opacity: 1, transition: { duration: 2 }}}
+    exit={{ opacity: 0, transition: { duration: 2 }}}
     style={{ originX: isPresent ? 0 : 1 }}
     className="transition"
     >
@@ -39,7 +40,7 @@ function Transition() {
       </div>
 
       <div className='logo-transition'>
-        <img src={logo} width="150px" height="150px"></img>
+        <img src={logo} width="150px" height="150px" alt='Logo'></img>
       </div>
       
 
