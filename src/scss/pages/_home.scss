@@ -69,8 +69,8 @@ h1 {
 }
 
 .img-container img {
-  transform: scaleX(-1)
-  translateY(-35%);
+  transform: scaleX(-1);
+  margin-top: -50%;
   z-index: 11;
 }
 
