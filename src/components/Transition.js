@@ -6,8 +6,8 @@ function Transition() {
   const isPresent = useIsPresent();
   return (
     <m.div 
-    initial={{ opacity: 1, duration: 2}}
-    animate={{ opacity: 0, transition: { duration: 2, ease: "linear" } }}
+    initial={{ opacity: 1, duration: 3}}
+    animate={{ opacity: 0, transition: { duration: 3, ease: "linear" } }}
     style={{ originX: isPresent ? 0 : 1 }}
     className="transition"
     >
