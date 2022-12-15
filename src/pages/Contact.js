@@ -1,17 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import turntable from '../turntable.jpg'
-import Transition from '../components/Transition'
 
 function Contact() {
   return (
     <div className='contact'>
-      <Transition/>
       <div className='email-container'>
-        <img id="contact-img" src={turntable}></img>
+        <img id="contact-img" src={turntable} alt='turntable'></img>
         <div className='link-container'>
-          <a onClick={() => window.location = 'mailto:contact@sounds-likeus.com'} id="email" target="_blank">
+          <Link onClick={() => window.location = 'mailto:contact@sounds-likeus.com'} id="email" target="_blank">
           contact@sounds-likeus.com
-          </a>
+          </Link>
         </div>
       </div>
     </div>

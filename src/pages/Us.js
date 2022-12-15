@@ -1,29 +1,17 @@
 import React from 'react'
 import bryden from '../bryden.jpeg';
 import abraham from '../abraham.jpeg';
-import { useEffect, useState } from "react";
-import {motion as m, AnimatePresence} from 'framer-motion';
-import Transition from '../components/Transition';
+import {motion as m} from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import brydenM from '../celok_briden.png';
 import abrahamM from '../celok_ab.png';
 
 function Us() {
-  const [loaded, setLoaded] = useState(false);
-    
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 3000);
-  }, []);
 
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
   return (
     
     <div className='us'>
-      <AnimatePresence>
-      {loaded ? null : <Transition/>}
-      </AnimatePresence>
       <m.div
         initial={{opacity: 0}}
         animate={{opacity: 1}}
@@ -34,7 +22,7 @@ function Us() {
               <h4 id='yellow-name' >Bryden</h4>
               <h4 id='white-surname'>Baird</h4>
             </div>
-            <img src={bryden} alt=""></img>
+            <img src={bryden} alt="Bryden"></img>
           </div>
           <div className='bryden-text'>
             <p>Bryden recently finished living in Mexico, in the role of <span id='band-leader'>band leader</span>/<span id='trumpet'>trumpet</span> player in cirque du soleil's joya.  He was musical director for both steven page, formerly of the barenaked ladies and indie-pop chanteuse feist. He also has a busy studio career in toronto, canada.  Composition and orchestration credits include art of time ensemble, work on the feature film 'gunless', with greg keelor of blue rodeo, chantal kreviazuk's symphony tour, and the queer songbook orchestra.  He studied jazz trumpet at humber college, university of toronto, banff centre for the arts with kenny wheeler, and privately with laurie frink in nyc. Television appearances have included saturday night live, the tonight show with jay leno, the late show with david letterman, late night with conan o'brien, jimmy kimmel live, late night with jools holland, the hour and bbc and cbc radio.  He has performed with michael buble, the temptations, kris kristofferson, louie bellson, blue rodeo, the toronto symphony, the vancouver symphony, esthero, sean lennon, merl saunders, ron sexsmith, sarah harmer, chantal kreviazuk, raine maida, the band of the ceremonial guard changing of the guard in canada and spoon to name a few.</p>
@@ -59,7 +47,7 @@ function Us() {
             <h5 id='orange-name'>Abraham</h5>
             <h5 id='yellow-surname'>Buchanan</h5>
           </div>
-          <img src={abraham} alt=""></img>
+          <img src={abraham} alt="Abraham"></img>
         </div>
       </m.div>
 
@@ -89,12 +77,12 @@ function Us() {
         </div>
         <div className='about-bg'>
           <div className='bryden-section'>
-            <img src={isMobile ? brydenM : bryden} width="100%" height="auto"/>
+            <img src={isMobile ? brydenM : bryden} width="100%" height="auto" alt='Bryden'/>
           </div>
           <div className='abraham-section'>
-          { isMobile ? <img src={abrahamM}/> :
+          { isMobile ? <img src={abrahamM} alt='Abraham'/> :
                 <div className='img-container'>
-                    <img width="100%" height="auto" src={abraham}/>
+                    <img width="100%" height="auto" src={abraham} alt='Abraham'/>
                 </div>
             }
           </div>
