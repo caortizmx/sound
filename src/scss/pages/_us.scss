@@ -89,7 +89,7 @@ li::marker {
 .mobile-about {
   .mobile-text{
     position: absolute;
-    z-index: 990;
+    z-index: 770;
   }
   .about-bg {
     top: 25vh;
@@ -103,7 +103,7 @@ li::marker {
     height: auto;
     display: flex;
     width: 100%;
-    z-index: 999;
+    z-index: 777;
     overflow-y: scroll;
     &:nth-child(1) {
       margin-bottom: 80px;
