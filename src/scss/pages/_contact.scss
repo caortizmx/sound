@@ -39,22 +39,14 @@ a {
   width: 100%;
 }
 
-// @media screen and (max-width: 1400px) {
-//   #contact-img {
-//     width: 1450px;
-//     position: fixed;
-//     overflow: hidden;
-//   }
-// }
-
 @media screen and (max-width: 600px) {
   .contact {
     padding-left: 0;
   }
 
   #contact-img {
-    padding-top: 35px;
-    height: 100vh;
+    padding-top: 50px;
+    height: 75vh;
     width: 100vw;
     position: fixed;
     overflow: hidden;
@@ -63,14 +55,11 @@ a {
   #email {
     font-size: 18px;
   }
-}
-
-@media screen and (max-width: 660px) {
   .link-container {
-    a {
-      font-size: 30px;
-    }
-    }
+    padding: 0;
+    bottom: 10vh;
+    height: auto;
+  }
 }
 
 #email {
