@@ -35,25 +35,25 @@ a {
 }
 
 #contact-img {
-  width: 1450px !important;
-  position: fixed !important;
-  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
 }
 
-@media screen and (max-width: 1400px) {
-  #contact-img {
-    width: 1450px !important;
-    position: fixed !important;
-    overflow: hidden !important;
-  }
-}
+// @media screen and (max-width: 1400px) {
+//   #contact-img {
+//     width: 1450px;
+//     position: fixed;
+//     overflow: hidden;
+//   }
+// }
 
 @media screen and (max-width: 600px) {
   .contact {
-    padding-left: 0 !important;
+    padding-left: 0;
   }
 
   #contact-img {
+    padding-top: 35px;
     height: 100vh;
     width: 100vw;
     position: fixed;
