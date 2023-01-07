@@ -11,7 +11,7 @@ function Projects() {
 
       <div className='background'>
         <div className='project-background'>
-        {isDesktop && <h3 id='current'>Currently</h3>}
+        {isDesktop && <h3 id='current'>Current</h3>}
         <div className='projects-top'>
           <div className='project-lines'></div>
           <div className='project-lines'></div>
@@ -28,7 +28,7 @@ function Projects() {
             <div className='project-lines'></div>
             <div className='project-lines'></div>
             <div className='project-lines'></div>
-            {isDesktop ? <h3 id='projects-tl'>Projects</h3> : <h3 id='projects-tl'>Currently Projects</h3> }
+            {isDesktop ? <h3 id='projects-tl'>Projects</h3> : <h3 id='projects-tl'>Current Projects</h3> }
             
           </div>
         </div>
